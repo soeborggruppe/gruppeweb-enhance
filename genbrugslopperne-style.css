@@ -1,0 +1,98 @@
+.progress-bar-container {
+    padding: 75px 75px 75px 80px;
+}
+.progress-bar {
+    font-family: sans-serif;
+    width: 100%;
+    position: relative;
+    border: 2px solid rgb(44, 62, 80);
+    border-radius: 8px;
+    z-index: 4;
+    font-size: 1.2em;
+}
+.progress-bar:before {
+    content: 'Status på årets loppemarkeder';
+    display: inline-block;
+    position: absolute;
+    width: 75px;
+    font-size: 0.6em;
+    top: 12px;
+    left: -77px;
+}
+.last-year-mark, .goal-mark, .current-mark {
+    width: 100px;
+    height: 32px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: -33px;
+    z-index: 3;
+}
+.last-year-mark, .current-mark {
+    transform: translateX(-50%);
+}
+.current-mark {
+    top: auto;
+    bottom: -33px;
+}
+.goal-mark {
+    left: calc(100% - 10px);
+    top: calc(50% - 13px);
+}
+.last-year-mark:before {
+    content: 'SIDSTE ÅR';
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    font-size: 0.6em;
+}
+.goal-mark:before {
+    display: inline-block;
+    position: absolute;
+    top: -5px;
+    left: 24px;
+    font-size: 0.6em;
+}
+.last-year-mark:after {
+    content: ' ';
+    display: inline-block;
+    height: 70px;
+    width: 2px;
+    background: black;
+    position: absolute;
+    left: 49px;
+    top: 22px;
+}
+.goal-mark:before {
+    color: rgb(46, 204, 113);
+}
+.goal-mark {
+    color: rgb(46, 204, 113);
+}
+.bar {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.bar.good {
+    background-color: rgb(46, 204, 113);
+}
+.bar.medium {
+    background-color: rgb(243, 156, 18);
+}
+.bar.bad {
+    background-color: rgb(192, 57, 43);
+}
+.current-mark.good {
+    color: rgb(46, 204, 113);
+}
+.current-mark.medium {
+    color: rgb(243, 156, 18);
+}
+.current-mark.bad {
+    color: rgb(192, 57, 43);
+}
