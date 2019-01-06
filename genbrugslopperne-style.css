@@ -1,5 +1,7 @@
 .progress-bar-container {
     padding: 75px 75px 75px 80px;
+    width: 100%;
+    max-width: 300px;
 }
 .progress-bar {
     font-family: sans-serif;
